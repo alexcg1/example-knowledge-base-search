@@ -6,7 +6,7 @@ services:
     environment:
       - SERVER=backend
     ports:
-      - 8700:8700
+      - 8701:8701
     #depends_on:
       #- backend
     volumes:

@@ -5,7 +5,7 @@ WORKDIR /workspace
 
 RUN pip install -r requirements.txt
 
-EXPOSE 8700
+EXPOSE 8701
 
 ENTRYPOINT ["streamlit", "run"]
 CMD ["frontend.py"]

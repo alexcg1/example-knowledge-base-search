@@ -4,21 +4,9 @@ services:
   frontend:
     build: frontend
     environment:
-      - SERVER=backend
+      - SERVER=https://covid-kb-5b6395f830.wolf.jina.ai
     ports:
       - 8700:8700
-    #depends_on:
-      #- backend
     volumes:
       - ./frontend:/workspace
-      #- ./data:/data
     restart: always
-
-  #backend:
-    #build: backend
-    #ports:
-      #- 23456:23456
-    ##volumes:
-      ##- ./workspace:/workspace
-      ##- ./data:/data
-    #restart: always
